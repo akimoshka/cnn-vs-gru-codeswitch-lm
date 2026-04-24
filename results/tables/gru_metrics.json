@@ -1,0 +1,15 @@
+{
+  "model": "GRU_LM",
+  "vocab_size": 3906,
+  "embedding_dim": 64,
+  "hidden_dim": 128,
+  "num_layers": 1,
+  "dropout": 0.1,
+  "batch_size": 16,
+  "lr": 0.001,
+  "epochs": 3,
+  "best_val_loss": 4.019110696792603,
+  "test_loss": 4.030971662521362,
+  "test_perplexity": 56.31560443336087,
+  "test_switch_accuracy": 0.7478090575275398
+}
