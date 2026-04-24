@@ -1,6 +1,4 @@
-# CNN vs RNN Language Models for Russian-English Code-Switching Streams
-
-This repository contains an NLP case study for the **NLP 2026 course**.
+# CNN vs RNN LM for Code-Switching Streams - Russian-English Code-Switching Streams
 
 The goal of the project is to compare two neural language modeling architectures:
 
@@ -59,6 +57,8 @@ project/
 │── results/
 │   ├── tables/
 │   └── figures/
+│
+│── Poster.pdf
 │
 └── README.md
 ````
@@ -170,6 +170,7 @@ RU RU EN EN
 0  1  0  0
 ```
 
+
 ---
 
 # Final Results
@@ -178,6 +179,23 @@ RU RU EN EN
 | ------ | --------: | --------------: | --------------: |
 | GRU LM |     4.031 |           56.32 |           0.748 |
 | CNN LM |     4.237 |           69.23 |           0.748 |
+
+---
+# Visualizations
+
+## Training and Validation Loss
+
+Shows how both models learned during training.  
+GRU converged faster and reached lower loss.
+
+![Training and Validation Loss](results/figures/train_val_loss_curves.png)
+
+
+## Normalized Model Comparison
+
+Radar chart comparing loss, perplexity, and switch accuracy.
+
+![Radar Comparison](results/figures/model_radar_comparison.png)
 
 ---
 
